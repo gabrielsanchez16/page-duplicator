@@ -117,32 +117,6 @@ const plans = [
   },
 ];
 
-function Stars({ rating }: { rating: number }) {
-  return (
-    <span className="flex items-center gap-2">
-      <span className="flex">
-        {[1, 2, 3, 4, 5].map((i) => (
-          <Star
-            key={i}
-            className={`size-3.5 ${
-              i <= Math.round(rating)
-                ? "fill-foreground text-foreground"
-                : "text-muted-foreground"
-            }`}
-          />
-        ))}
-      </span>
-      <span className="text-xs text-muted-foreground">
-        {rating} ({reviewsLabel(rating)})
-      </span>
-    </span>
-  );
-}
-
-function reviewsLabel(_r: number) {
-  return "";
-}
-
 export function MedicosSection() {
   const [tab, setTab] = useState<"tienda" | "financiacion">("tienda");
 
