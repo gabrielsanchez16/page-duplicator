@@ -16,7 +16,7 @@ export function Hero() {
     <section id="inicio" className="relative overflow-hidden pt-[72px]">
       <div className="relative mx-auto max-w-[1400px] px-6 lg:px-10">
         <div className="relative grid grid-cols-1 items-center gap-8 pt-10 lg:grid-cols-[1fr_minmax(0,640px)_1fr] lg:gap-4">
-          <div className="order-2 space-y-28 lg:order-1 lg:text-right">
+          <div className="order-2 hidden space-y-28 lg:order-1 lg:block lg:text-right">
             {leftSpecs.map((s) => (
               <div key={s.title} className="border-b border-border pb-3">
                 <p className="text-[13px] font-semibold uppercase tracking-[0.14em] text-foreground">
@@ -45,7 +45,7 @@ export function Hero() {
             />
           </div>
 
-          <div className="order-3 space-y-28">
+          <div className="order-3 hidden space-y-28 lg:block">
             {rightSpecs.map((s) => (
               <div key={s.title} className="border-b border-border pb-3">
                 <p className="text-[13px] font-semibold uppercase tracking-[0.14em] text-foreground">
