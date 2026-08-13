@@ -5,8 +5,9 @@ const links = [
   { label: "Tecnología", href: "#tecnologia", id: "tecnologia" },
   { label: "Ecosistema", href: "#ecosistema", id: "ecosistema" },
   { label: "App", href: "#app", id: "app" },
-  { label: "Trazabilidad", href: "#trazabilidad", id: "trazabilidad" },
   { label: "Para Médicos", href: "#medicos", id: "medicos" },
+  { label: "Trazabilidad", href: "#trazabilidad", id: "trazabilidad" }
+  
 ];
 
 export function Navbar() {

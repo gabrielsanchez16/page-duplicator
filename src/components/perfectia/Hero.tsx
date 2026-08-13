@@ -1,5 +1,5 @@
 import { ArrowRight, ChevronDown, Play } from "lucide-react";
-import heroAsset from "@/assets/perfectia-caja.png";
+import heroAsset from "../../assets/perfectia-caja.png";
 
 const leftSpecs = [
   { title: "Gel Ultra Soft", desc: "Sensación natural" },
@@ -36,7 +36,7 @@ export function Hero() {
               }}
             />
             <img
-              src={heroAsset.url}
+              src={heroAsset}
               alt="Caja PerfectIA con implante mamario inteligente sostenido por una mano robótica"
               width={1920}
               height={1536}
