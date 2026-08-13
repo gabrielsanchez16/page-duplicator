@@ -1,5 +1,5 @@
 import { ArrowRight, ChevronDown, Play } from "lucide-react";
-import heroImage from "@/assets/hero-implant.jpg";
+import heroAsset from "@/assets/perfectia-caja.png.asset.json";
 
 const leftSpecs = [
   { title: "Gel Ultra Soft", desc: "Sensación natural" },
@@ -36,12 +36,15 @@ export function Hero() {
               }}
             />
             <img
-              src={heroImage}
-              alt="Implante mamario inteligente PerfectIA sostenido por una mano robótica"
-              width={1200}
-              height={1200}
+              src={heroAsset.url}
+              alt="Caja PerfectIA con implante mamario inteligente sostenido por una mano robótica"
+              width={1920}
+              height={1536}
               className="w-full select-none"
-              style={{ maskImage: "radial-gradient(circle at 50% 50%, black 58%, transparent 78%)" }}
+              style={{
+                maskImage:
+                  "radial-gradient(ellipse at 50% 45%, black 55%, transparent 82%)",
+              }}
             />
           </div>
 
