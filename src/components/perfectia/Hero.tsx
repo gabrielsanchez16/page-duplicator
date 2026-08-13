@@ -1,5 +1,5 @@
 import { ArrowRight, ChevronDown, Play } from "lucide-react";
-import heroAsset from "@/assets/perfectia-caja.png.asset.json";
+import heroAsset from "@/assets/perfectia-caja.png";
 
 const leftSpecs = [
   { title: "Gel Ultra Soft", desc: "Sensación natural" },
