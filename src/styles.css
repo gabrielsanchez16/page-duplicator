@@ -131,10 +131,16 @@
 
   body {
     background-color: var(--color-background);
+    background-image:
+      radial-gradient(80% 50% at 50% 0%, oklch(0.45 0.13 250 / 30%), transparent 70%),
+      radial-gradient(60% 40% at 15% 40%, oklch(0.38 0.1 250 / 18%), transparent 70%),
+      radial-gradient(60% 40% at 85% 70%, oklch(0.38 0.1 250 / 18%), transparent 70%);
+    background-attachment: fixed;
     color: var(--color-foreground);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
   }
+
 
   ::selection {
     background: oklch(1 0 0 / 15%);
